@@ -1,0 +1,3 @@
+# Project exclude paths
+/dm-common/target/
+/dm-service/target/
