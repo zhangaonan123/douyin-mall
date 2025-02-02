@@ -11,6 +11,8 @@
     <modules>
         <module>dm-common</module>
         <module>dm-service</module>
+        <module>item-service</module>
+        <module>cart-service</module>
     </modules>
 
     <parent>
