@@ -1,8 +1,8 @@
 package com.dmall.item.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.dmall.item.domain.dto.ItemDTO;
-import com.dmall.item.domain.dto.OrderDetailDTO;
+import com.dmall.api.dto.ItemDTO;
+import com.dmall.api.dto.OrderDetailDTO;
 import com.dmall.item.domain.po.Item;
 
 

@@ -24,6 +24,12 @@
             <artifactId>dm-common</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <!-- dm-api -->
+        <dependency>
+            <groupId>com.douyin</groupId>
+            <artifactId>dm-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <!--web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -38,6 +44,11 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <!--nacos 服务注册发现-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
         <dependency>
             <groupId>com.douyin</groupId>

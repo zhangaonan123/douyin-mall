@@ -1,60 +1,31 @@
-20:43:31:073  INFO 27964 --- [main] com.dmall.DMallApplication               : Starting DMallApplication using Java 11.0.26 on 求求你们别卷了 with PID 27964 (D:\Project\dmall\dmall\dm-service\target\classes started by zhang in D:\Project\dmall\dmall)
-20:43:31:079 DEBUG 27964 --- [main] com.dmall.DMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
-20:43:31:079  INFO 27964 --- [main] com.dmall.DMallApplication               : The following 1 profile is active: "local"
-20:43:31:721  INFO 27964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-20:43:31:723  INFO 27964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-20:43:31:753  INFO 27964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-20:43:32:110  INFO 27964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-20:43:32:121  INFO 27964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-20:43:32:121  INFO 27964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-20:43:32:314  INFO 27964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-20:43:32:315  INFO 27964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1200 ms
-20:43:33:750  INFO 27964 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-20:43:34:090  INFO 27964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-20:43:34:092  INFO 27964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-20:43:34:094  INFO 27964 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-20:43:34:113  INFO 27964 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-20:43:34:266  INFO 27964 --- [main] com.dmall.DMallApplication               : Started DMallApplication in 3.529 seconds (JVM running for 4.441)
-20:43:55:099  INFO 27964 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-20:43:55:100  INFO 27964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-20:43:55:101  INFO 27964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-20:43:55:273  INFO 27964 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-20:43:55:515  INFO 27964 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-20:43:55:520 DEBUG 27964 --- [http-nio-8080-exec-1] com.dmall.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
-20:43:55:536 DEBUG 27964 --- [http-nio-8080-exec-1] com.dmall.mapper.UserMapper.selectOne    : ==> Parameters: jack(String)
-20:43:55:560 DEBUG 27964 --- [http-nio-8080-exec-1] com.dmall.mapper.UserMapper.selectOne    : <==      Total: 1
-20:43:55:862 DEBUG 27964 --- [http-nio-8080-exec-4] com.dmall.mapper.CartMapper.selectList   : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-20:43:55:862 DEBUG 27964 --- [http-nio-8080-exec-4] com.dmall.mapper.CartMapper.selectList   : ==> Parameters: 1(Long)
-20:43:55:866 DEBUG 27964 --- [http-nio-8080-exec-4] com.dmall.mapper.CartMapper.selectList   : <==      Total: 0
-20:58:15:979  INFO 27964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-20:58:15:986  INFO 27964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-21:04:03:941  INFO 26928 --- [main] com.dmall.DMallApplication               : Starting DMallApplication using Java 11.0.26 on 求求你们别卷了 with PID 26928 (D:\Project\douyin-mall\dmall\dm-service\target\classes started by zhang in D:\Project\douyin-mall\dmall)
-21:04:03:944 DEBUG 26928 --- [main] com.dmall.DMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
-21:04:03:944  INFO 26928 --- [main] com.dmall.DMallApplication               : The following 1 profile is active: "local"
-21:04:04:439  INFO 26928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-21:04:04:440  INFO 26928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-21:04:04:459  INFO 26928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
-21:04:04:745  INFO 26928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-21:04:04:750  INFO 26928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-21:04:04:750  INFO 26928 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-21:04:04:824  INFO 26928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-21:04:04:824  INFO 26928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 854 ms
-21:04:05:960  INFO 26928 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-21:04:06:160  INFO 26928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-21:04:06:161  INFO 26928 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-21:04:06:163  INFO 26928 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-21:04:06:188  INFO 26928 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-21:04:06:323  INFO 26928 --- [main] com.dmall.DMallApplication               : Started DMallApplication in 2.621 seconds (JVM running for 3.23)
-21:04:23:173  INFO 26928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-21:04:23:174  INFO 26928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-21:04:23:176  INFO 26928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-21:04:23:333  INFO 26928 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-21:04:23:555  INFO 26928 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-21:04:23:560 DEBUG 26928 --- [http-nio-8080-exec-1] com.dmall.mapper.UserMapper.selectOne    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
-21:04:23:578 DEBUG 26928 --- [http-nio-8080-exec-1] com.dmall.mapper.UserMapper.selectOne    : ==> Parameters: jack(String)
-21:04:23:598 DEBUG 26928 --- [http-nio-8080-exec-1] com.dmall.mapper.UserMapper.selectOne    : <==      Total: 1
-21:04:23:885 DEBUG 26928 --- [http-nio-8080-exec-6] com.dmall.mapper.CartMapper.selectList   : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
-21:04:23:885 DEBUG 26928 --- [http-nio-8080-exec-6] com.dmall.mapper.CartMapper.selectList   : ==> Parameters: 1(Long)
-21:04:23:887 DEBUG 26928 --- [http-nio-8080-exec-6] com.dmall.mapper.CartMapper.selectList   : <==      Total: 0
-21:04:37:359  INFO 26928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-21:04:37:371  INFO 26928 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+16:16:02:628  INFO 18824 --- [main] com.dmall.DMallApplication               : Starting DMallApplication using Java 11.0.26 on 求求你们别卷了 with PID 18824 (D:\Project\douyin-mall\dmall\dm-service\target\classes started by zhang in D:\Project\douyin-mall\dmall)
+16:16:02:634 DEBUG 18824 --- [main] com.dmall.DMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+16:16:02:634  INFO 18824 --- [main] com.dmall.DMallApplication               : The following 1 profile is active: "local"
+16:16:03:318  INFO 18824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+16:16:03:321  INFO 18824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:16:03:347  INFO 18824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+16:16:03:798  INFO 18824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+16:16:03:808  INFO 18824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:16:03:808  INFO 18824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+16:16:03:910  INFO 18824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:16:03:910  INFO 18824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1236 ms
+16:16:05:812  INFO 18824 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+16:16:06:130  WARN 18824 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+16:16:06:150  INFO 18824 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+16:16:06:161  INFO 18824 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:16:06:178 ERROR 18824 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

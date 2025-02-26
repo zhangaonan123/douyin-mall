@@ -13,6 +13,11 @@
         <module>dm-service</module>
         <module>item-service</module>
         <module>cart-service</module>
+        <module>dm-api</module>
+        <module>user-service</module>
+        <module>pay-service</module>
+        <module>trade-service</module>
+        <module>dm-gateway</module>
     </modules>
 
     <parent>

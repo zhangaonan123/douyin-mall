@@ -6,8 +6,8 @@ import com.dmall.common.domain.PageDTO;
 import com.dmall.common.domain.PageQuery;
 import com.dmall.common.utils.BeanUtils;
 
-import com.dmall.item.domain.dto.ItemDTO;
-import com.dmall.item.domain.dto.OrderDetailDTO;
+import com.dmall.api.dto.ItemDTO;
+import com.dmall.api.dto.OrderDetailDTO;
 import com.dmall.item.domain.po.Item;
 import com.dmall.item.service.IItemService;
 import io.swagger.annotations.Api;
